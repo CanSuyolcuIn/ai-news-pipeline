@@ -1,0 +1,140 @@
+# RSS ve Exa.ai Kaynakları
+
+rss_feeds:
+
+  # --- Model / Araştırma Şirketleri ---
+  - name: Hugging Face Blog
+    url: https://huggingface.co/blog/feed.xml
+    category: model_sirket
+
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    category: model_sirket
+
+  # Anthropic - RSS yok, Exa ile kapsanıyor
+  # Mistral - RSS yok, Exa ile kapsanıyor
+  # Cohere - RSS yok, Exa ile kapsanıyor
+
+  - name: Meta AI Engineering Blog
+    url: https://engineering.fb.com/feed/
+    category: model_sirket
+
+  - name: Ai2 Blog
+    url: https://allenai.org/rss.xml
+    category: model_sirket
+
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    category: model_sirket
+
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    category: model_sirket
+
+  - name: Microsoft Research Blog
+    url: https://www.microsoft.com/en-us/research/blog/feed/
+    category: model_sirket
+
+  - name: NVIDIA Developer Blog
+    url: https://developer.nvidia.com/blog/feed/
+    category: model_sirket
+
+  - name: AWS ML Blog
+    url: https://aws.amazon.com/blogs/machine-learning/feed/
+    category: model_sirket
+
+  # --- Haber / Analiz Siteleri ---
+  - name: The Decoder
+    url: https://the-decoder.com/feed/
+    category: haber
+
+  - name: MarkTechPost
+    url: https://www.marktechpost.com/feed/
+    category: haber
+
+  - name: MIT Technology Review AI
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+    category: haber
+
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    category: haber
+
+  - name: Import AI (Jack Clark)
+    url: https://importai.substack.com/feed
+    category: haber
+
+  - name: Ahead of AI (Sebastian Raschka)
+    url: https://magazine.sebastianraschka.com/feed
+    category: haber
+
+  - name: Simon Willison's Blog
+    url: https://simonwillison.net/atom/everything/
+    category: haber
+
+  # Kaldırılanlar:
+  # VentureBeat AI - RSS çalışmıyor (0 sonuç)
+  # Weaviate Blog - çok dar kapsam (1 sonuç)
+  # Hacker News - bot engelliyor (0 sonuç)
+
+
+# Exa.ai ile aranacak sorgular
+exa_queries:
+
+  # --- Şirket Duyuruları (RSS'si olmayan) ---
+  - query: "site:anthropic.com new model OR research OR product"
+    category: model
+  - query: "site:mistral.ai new model released"
+    category: model
+  - query: "site:cohere.com new model OR feature released"
+    category: model
+
+  # --- Model Duyuruları ---
+  - query: "introducing new AI model released"
+    category: model
+  - query: "we are open sourcing new model"
+    category: model
+  - query: "open weight model released 2026"
+    category: model
+  - query: "multimodal model release announcing"
+    category: model
+  - query: "new reasoning model released"
+    category: model
+  - query: "new text to speech model released"
+    category: model
+  - query: "new vision language model released"
+    category: model
+  - query: "new embedding model released"
+    category: model
+
+  # --- Araştırma Yöntemleri ---
+  - query: "new AI training method paper arxiv 2026"
+    category: akademik
+  - query: "new fine-tuning method LLM paper"
+    category: akademik
+  - query: "new RAG technique paper released"
+    category: akademik
+  - query: "new AI inference optimization technique"
+    category: akademik
+
+  # --- Framework / Araçlar ---
+  - query: "new MCP server released open source"
+    category: framework
+  - query: "new AI agent framework released"
+    category: framework
+  - query: "new vector database feature released"
+    category: framework
+
+  # --- GitHub / Open Source ---
+  - query: "site:github.com new AI model released 2026"
+    category: github
+  - query: "site:github.com new open source LLM"
+    category: github
+
+  # --- X / Twitter ---
+  - query: "site:x.com introducing new AI model released"
+    category: x_twitter
+  - query: "site:x.com we are open sourcing model"
+    category: x_twitter
+  - query: "site:x.com new open source LLM released"
+    category: x_twitter
