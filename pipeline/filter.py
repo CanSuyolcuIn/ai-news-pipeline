@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-INDEX_PATH = os.path.join(DATA_DIR, "published_index.json")
+INDEX_PATH = os.path.join(os.path.dirname(__file__), "published_index.json")
 
 API_KEY = os.environ.get("OPENCODE_API_KEY", "")
 BASE_URL = "https://opencode.ai/zen/go/v1"

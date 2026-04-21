@@ -14,7 +14,7 @@ import re
 from datetime import datetime, timezone, timedelta
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-INDEX_PATH = os.path.join(DATA_DIR, "published_index.json")
+INDEX_PATH = os.path.join(os.path.dirname(__file__), "published_index.json")
 HOURS_BACK = 168  # Son 7 günün verisi
 INDEX_MAX_DAYS = 30
 SIMILARITY_THRESHOLD = 0.55
