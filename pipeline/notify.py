@@ -88,15 +88,17 @@ def md_to_html(md: str) -> str:
 def send_mail(subject: str, html: str, plain: str) -> None:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
+    recipients = [GMAIL_USER, "can.suyolcu@inteley.com.tr"]
+
     msg["From"] = GMAIL_USER
-    msg["To"] = GMAIL_USER
+    msg["To"] = ", ".join(recipients)
 
     msg.attach(MIMEText(plain, "plain", "utf-8"))
     msg.attach(MIMEText(html, "html", "utf-8"))
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
-        server.sendmail(GMAIL_USER, GMAIL_USER, msg.as_string())
+        server.sendmail(GMAIL_USER, recipients, msg.as_string())
 
 
 def main():
@@ -112,7 +114,7 @@ def main():
     html = md_to_html(bulletin)
     send_mail(subject, html, bulletin)
 
-    print(f"  -> Mail gönderildi: {GMAIL_USER}")
+    print(f"  -> Mail gönderildi: {GMAIL_USER}, can.suyolcu@inteley.com.tr")
     print(f"  Konu: {subject}")
 
 
