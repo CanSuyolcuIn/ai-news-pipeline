@@ -26,6 +26,8 @@ jobs:
         run: |
           echo "EXA_API_KEY=${{ secrets.EXA_API_KEY }}" > pipeline/.env
           echo "OPENCODE_API_KEY=${{ secrets.OPENCODE_API_KEY }}" >> pipeline/.env
+          echo "GMAIL_USER=${{ secrets.GMAIL_USER }}" >> pipeline/.env
+          echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> pipeline/.env
 
       - name: Run pipeline
         working-directory: pipeline
@@ -35,6 +37,7 @@ jobs:
           python filter.py
           python summarize.py
           python format.py
+          python notify.py
 
       - name: Set date
         id: date
