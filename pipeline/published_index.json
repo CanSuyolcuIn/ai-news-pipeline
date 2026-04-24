@@ -76,5 +76,18 @@
   "https://www.marktechpost.com/2026/04/23/google-cloud-ai-research-introduces-reasoningbank-a-memory-framework-that-distills-reasoning-strategies-from-agent-successes-and-failures": "2026-04-23",
   "https://www.marktechpost.com/2026/04/22/xiaomi-releases-mimo-v2-5-pro-and-mimo-v2-5-matching-frontier-model-benchmarks-at-significantly-lower-token-cost": "2026-04-23",
   "https://www.marktechpost.com/2026/04/22/alibaba-qwen-team-releases-qwen3-6-27b-a-dense-open-weight-model-outperforming-397b-moe-on-agentic-coding-benchmarks": "2026-04-23",
-  "https://simonwillison.net/2026/Apr/22/qwen36-27b": "2026-04-23"
+  "https://simonwillison.net/2026/Apr/22/qwen36-27b": "2026-04-23",
+  "https://openai.com/introducing-gpt-5-5": "2026-04-24",
+  "https://openai.com/gpt-5-5-system-card": "2026-04-24",
+  "https://deepmind.google/blog/decoupled-diloco": "2026-04-24",
+  "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu": "2026-04-24",
+  "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next": "2026-04-24",
+  "https://the-decoder.com/openai-unveils-gpt-5-5-claims-a-new-class-of-intelligence-at-double-the-api-price": "2026-04-24",
+  "https://the-decoder.com/googles-open-source-design-md-gives-ai-agents-a-prompt-ready-blueprint-for-brand-consistent-design": "2026-04-24",
+  "https://the-decoder.com/openai-releases-open-source-model-that-strips-personal-data-from-text": "2026-04-24",
+  "https://www.marktechpost.com/2026/04/23/google-deepmind-introduces-decoupled-diloco-an-asynchronous-training-architecture-achieving-88-goodput-under-high-hardware-failure-rates": "2026-04-24",
+  "https://www.marktechpost.com/2026/04/23/openai-releases-gpt-5-5-a-fully-retrained-agentic-model-that-scores-82-7-on-terminal-bench-2-0-and-84-9-on-gdpval": "2026-04-24",
+  "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp": "2026-04-24",
+  "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia": "2026-04-24",
+  "https://simonwillison.net/2026/Apr/23/liteparse-for-the-web": "2026-04-24"
 }
