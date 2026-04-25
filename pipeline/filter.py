@@ -21,6 +21,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 INDEX_PATH = os.path.join(os.path.dirname(__file__), "published_index.json")
+TITLES_PATH = os.path.join(os.path.dirname(__file__), "published_titles.json")
+MAX_HISTORY_RUNS = 10
 
 API_KEY = os.environ.get("OPENCODE_API_KEY", "")
 BASE_URL = "https://opencode.ai/zen/go/v1"
@@ -108,6 +110,102 @@ def print_source_table(stats: list[dict]) -> None:
         )
 
 
+def load_published_titles() -> list[str]:
+    """Son MAX_HISTORY_RUNS bültenin başlıklarını düz liste olarak döndürür."""
+    if not os.path.exists(TITLES_PATH):
+        return []
+    with open(TITLES_PATH, encoding="utf-8") as f:
+        data: dict[str, list[str]] = json.load(f)
+    # Tarihe göre sırala, son MAX_HISTORY_RUNS runı al
+    sorted_dates = sorted(data.keys(), reverse=True)[:MAX_HISTORY_RUNS]
+    titles: list[str] = []
+    for date in sorted_dates:
+        titles.extend(data[date])
+    return titles
+
+
+def update_published_titles(kept: list[dict], date_str: str) -> None:
+    """Bu run'ın başlıklarını published_titles.json'a ekler, MAX_HISTORY_RUNS'u aşanları siler."""
+    if os.path.exists(TITLES_PATH):
+        with open(TITLES_PATH, encoding="utf-8") as f:
+            data: dict[str, list[str]] = json.load(f)
+    else:
+        data = {}
+
+    data[date_str] = [item.get("title", "") for item in kept if item.get("title")]
+
+    # MAX_HISTORY_RUNS'u aşan eski kayıtları temizle
+    sorted_dates = sorted(data.keys(), reverse=True)
+    for old_date in sorted_dates[MAX_HISTORY_RUNS:]:
+        del data[old_date]
+
+    with open(TITLES_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  -> Published titles güncellendi: {len(data[date_str])} başlık kaydedildi ({len(data)} run saklanıyor)")
+
+
+CROSS_RUN_DEDUP_PROMPT = """Asagida iki liste var:
+
+ONCEKI BULTENLER (son {run_count} bülten, toplamda {title_count} haber):
+{prev_titles}
+
+BUGUNUN ADAYLARI:
+{new_items}
+
+Kural: Bugunun adaylarindan, onceki bultenlerde zaten kapsanmis bir konuyu veya duyuruyu ele alanlari SKIP et.
+Yeni bir guncelleme, yeni bir versiyon veya farkli bir urun ise KEEP et.
+
+Ornek: Onceki bultende "DeepSeek-V4 piyasaya suruldu" varsa, yeni "DeepSeek-V4 analizi" → SKIP.
+Ama "DeepSeek-V4.1 released" → KEEP (farkli surum).
+
+SADECE su JSON formatinda yanit ver, baska hicbir sey yazma:
+{{"keep": [0, 2, 4]}}"""
+
+
+def cross_run_topic_dedup(client: OpenAI, items: list[dict]) -> list[dict]:
+    """Önceki bültenlerle konu örtüşmesini LLM ile kontrol eder."""
+    if not items:
+        return items
+
+    prev_titles = load_published_titles()
+    if not prev_titles:
+        print("  Cross-run dedup: geçmiş bulunamadı, atlanıyor.")
+        return items
+
+    prev_lines = "\n".join(f"- {t}" for t in prev_titles)
+    new_lines = "\n".join(f"{i}: {item.get('title', '')}" for i, item in enumerate(items))
+
+    prompt = CROSS_RUN_DEDUP_PROMPT.format(
+        run_count=min(MAX_HISTORY_RUNS, len(prev_titles) // max(1, len(prev_titles) // MAX_HISTORY_RUNS)),
+        title_count=len(prev_titles),
+        prev_titles=prev_lines,
+        new_items=new_lines,
+    )
+
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+        max_tokens=1000,
+    )
+
+    raw = (response.choices[0].message.content or "").strip()
+    match = re.search(r'\{.*?"keep".*?\}', raw, re.DOTALL)
+    if match:
+        raw = match.group(0)
+
+    try:
+        parsed = json.loads(raw)
+        keep_local = parsed.get("keep", [])
+        result = [items[i] for i in keep_local if i < len(items)]
+        skipped = len(items) - len(result)
+        print(f"  Cross-run dedup: {skipped} haber önceki bültenle örtüştü, atlandı → {len(result)} kaldı")
+        return result
+    except (json.JSONDecodeError, IndexError):
+        print(f"  [UYARI] Cross-run dedup parse hatası, liste korunuyor: {raw[:100]}")
+        return items
+
+
 def update_published_index(kept: list[dict], date_str: str) -> None:
     if os.path.exists(INDEX_PATH):
         with open(INDEX_PATH, encoding="utf-8") as f:
@@ -137,38 +235,49 @@ def load_deduped():
 
 PROMPT_TEMPLATE = """Asagidaki haber basliklarini incele.
 
-Amacimiz: okuyuculara SADECE gercekten yeni cikan modeller, yontemler ve teknolojileri iletmek.
-Eger bir baslik bu kriterlere giriyorsa KEEP et, girecek kadar varsa hepsini KEEP et.
+Amac: SADECE gercekten piyasaya surulmus yeni AI modelleri, yeni API'lar ve yeni gelistirici araclari.
 
-KEEP — asagidaki yollardan biri yeterlİ:
+KEEP kriterleri — asagidakilerden BIRI yeterlİ:
 
-YOL A (duyuru): Baslikta yeni bir seyin adi + duyuru sinyali
-  Duyuru sinyalleri: Introducing, Releasing, Launches, Announces, Open-sourcing, Released, Now available
-  Ornek: "Introducing GPT-Rosalind for life sciences research" → KEEP
-  Ornek: "xAI Launches Grok Speech-to-Text API" → KEEP
+A) Yeni model/API/arac surumu:
+   Somut urun/model adi + surum sinyali (Introducing, Releases, Launches, Now available,
+   Open-sourcing, Released, Announced, Debuts, Ships, Preview)
+   Ornek: "Introducing GPT-Rosalind" → KEEP
+   Ornek: "xAI Launches Grok Speech-to-Text API" → KEEP
+   Ornek: "DeepSeek-V4: a million-token context" → KEEP
 
-YOL B (teknik haber): Baslikta somut model/yontem/teknoloji adi + teknik detay/yetenek
-  (Duyuru sinyali olmasa da olur)
-  Ornek: "Open-weight Kimi K2.6 takes on GPT-5.4 with agent swarms" → KEEP (model adi + teknik detay)
-  Ornek: "Gemini 3.1 Flash TTS: the next generation of expressive AI speech" → KEEP
-  Ornek: "New fine-tuning method lets LLMs learn new skills without forgetting" → KEEP (yeni yontem)
-  Ornek: "NVIDIA Ising: AI-Powered Workflows for Fault-Tolerant Quantum Systems" → KEEP
+B) Yeni pratik teknik/yontem — gelistiricilerin hemen kullanabilecegi:
+   Surum sinyali olmasa da olur, ama arxiv/paper/benchmark olmamali
+   Ornek: "New prompting technique cuts hallucinations by 40%" → KEEP
+   Ornek: "OpenAI releases new fine-tuning method for tool use" → KEEP
+   Ornek: "Speculative decoding now available in vLLM" → KEEP
 
-SKIP — asagidakilerden HERHANGI BIRI varsa SKIP (model adi gecse bile):
-- Is, yatirim, funding, CEO, sirket haberi ("raises $2B", "files for IPO", "pours $33B")
-- Robotik, insansi robot, otonom arac ("humanoid", "robotaxi", "robot marathon")
-- Liste, siralama ("Top 10", "Best X in 2026")
-- Rehber, tutorial, uygulama ornegi ("How to", "Guide", "Explained", "Coding Implementation")
-- Genel analiz, yorum, fikir ("Why AI is...", "tokenmaxxing", "The 12-month window")
-- Politika, guvenlik, strateji haberi ("NSA", "Trump", "regulation", "builds elite team")
-- Kullanici deneyimi, uretkenlik, is sureci haberleri
+SKIP — asagidakilerden HERHANGI BIRI varsa SKIP:
+- Arxiv makalesi, akademik paper, benchmark karsilastirmasi, leaderboard
+- Is, yatirim, funding, CEO, strateji, politika haberi
+- Robotik, insansi robot, otonom arac
+- Liste, siralama, rehber, tutorial, uygulama ornegi
+- Genel yorum, analiz, fikir yazisi
+- Kullanici deneyimi, uretkenlik haberi
 
-SKIP onceliklİdİr: KEEP kriterleri saglansa bile SKIP kosullari varsa SKIP et.
-Negatif ornek: "Anthropic raises $10B for Claude Opus 4.7" → SKIP (model adi gecse de funding)
 Suphe duyuyorsan SKIP et.
 
 Basliklar:
 {titles}
+
+SADECE su JSON formatinda yanit ver, baska hicbir sey yazma:
+{{"keep": [0, 2, 4]}}"""
+
+
+TOPIC_DEDUP_PROMPT = """Asagidaki haberler onceden filtrelenip secilmistir. Ancak bazi haberler ayni duyuruyu/modeli farkli kaynaklardan haber yapabilir.
+
+Kural: Her bir benzersiz duyuru/model icin SADECE EN IYI 1 kaynak kalsin.
+Kaynak tercih sirasi: resmi lab blogu (openai.com, anthropic.com, deepmind.google, huggingface.co/blog, developer.nvidia.com, aws.amazon.com) > teknik haber sitesi > genel haber sitesi
+
+Ornek: Eger listede DeepSeek V4 hakkinda 4 farkli kaynak varsa, sadece en bilgilendirici/resmi 1 tanesini tut.
+
+Haberler:
+{items}
 
 SADECE su JSON formatinda yanit ver, baska hicbir sey yazma:
 {{"keep": [0, 2, 4]}}"""
@@ -225,6 +334,40 @@ def filter_batch(client: OpenAI, items: list[dict], offset: int) -> list[int]:
         return []
 
 
+def topic_dedup(client: OpenAI, items: list[dict]) -> list[dict]:
+    """Aynı konuyu farklı kaynaklardan işleyen makaleleri teke indirir."""
+    if len(items) <= 1:
+        return items
+
+    lines = []
+    for i, item in enumerate(items):
+        lines.append(f"{i}: [{item.get('source', '')}] {item.get('title', '')}")
+
+    prompt = TOPIC_DEDUP_PROMPT.format(items="\n".join(lines))
+
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0,
+        max_tokens=1000,
+    )
+
+    raw = (response.choices[0].message.content or "").strip()
+    match = re.search(r'\{.*?"keep".*?\}', raw, re.DOTALL)
+    if match:
+        raw = match.group(0)
+
+    try:
+        parsed = json.loads(raw)
+        keep_local = parsed.get("keep", [])
+        result = [items[i] for i in keep_local if i < len(items)]
+        print(f"  Topic dedup: {len(items)} → {len(result)} haber")
+        return result
+    except (json.JSONDecodeError, IndexError):
+        print(f"  [UYARI] Topic dedup parse hatasi, ham liste korunuyor: {raw[:100]}")
+        return items
+
+
 def main():
     if not API_KEY:
         print("OPENCODE_API_KEY bulunamadı. .env dosyasını kontrol et.")
@@ -250,6 +393,14 @@ def main():
         print(f"    KEEP: {len(indices)}")
 
     kept = [items[i] for i in keep_indices]
+    print(f"\n  Batch filtre sonrasi: {len(kept)} / {len(items)}")
+
+    print("\n  Topic dedup uygulanıyor...")
+    kept = topic_dedup(client, kept)
+
+    print("\n  Cross-run topic dedup uygulanıyor...")
+    kept = cross_run_topic_dedup(client, kept)
+
     print(f"\n  Toplam KEEP: {len(kept)} / {len(items)}")
 
     out_path = os.path.join(DATA_DIR, date_str, "output.json")
@@ -258,6 +409,7 @@ def main():
 
     print(f"  -> Kaydedildi: {out_path}")
     update_published_index(kept, date_str)
+    update_published_titles(kept, date_str)
 
     stats = compute_source_stats(items, keep_indices)
     print_source_table(stats)

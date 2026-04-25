@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '0 6 * * *'  # Her gün 06:00 UTC (09:00 Türkiye)
   workflow_dispatch:      # Manuel tetikleme
+    inputs:
+      force_run:
+        description: 'Cadence kontrolünü atla ve zorla çalıştır'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 jobs:
   run-pipeline:
@@ -31,7 +40,44 @@ jobs:
           echo "GMAIL_USER=${{ secrets.GMAIL_USER }}" >> pipeline/.env
           echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> pipeline/.env
 
+      - name: Cadence check
+        id: cadence
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys
+          from datetime import datetime
+
+          force = os.environ.get("FORCE_RUN", "false").lower() == "true"
+          if force:
+              print("Force run aktif — cadence atlanıyor.")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("should_run=true\n")
+              sys.exit(0)
+
+          path = "pipeline/published_index.json"
+          if not os.path.exists(path):
+              pass
+          else:
+              with open(path) as f:
+                  index = json.load(f)
+              if index:
+                  last_date = max(index.values())
+                  last_dt = datetime.strptime(last_date, "%Y-%m-%d")
+                  days_since = (datetime.now() - last_dt).days
+                  if days_since < 3:
+                      print(f"Son yayın {days_since} gün önce yapıldı — atlanıyor.")
+                      with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                          f.write("should_run=false\n")
+                      sys.exit(0)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("should_run=true\n")
+          EOF
+        env:
+          FORCE_RUN: ${{ github.event.inputs.force_run || 'false' }}
+
       - name: Run pipeline
+        if: steps.cadence.outputs.should_run == 'true'
         working-directory: pipeline
         run: |
           python fetch.py
@@ -43,9 +89,11 @@ jobs:
 
       - name: Set date
         id: date
+        if: steps.cadence.outputs.should_run == 'true'
         run: echo "today=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Upload bulletin
+        if: steps.cadence.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: bulletin-${{ steps.date.outputs.today }}
@@ -57,9 +105,10 @@ jobs:
           retention-days: 30
 
       - name: Commit published index
+        if: steps.cadence.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pipeline/published_index.json
+          git add pipeline/published_index.json pipeline/published_titles.json
           git diff --staged --quiet || git commit -m "chore: update published index [${{ steps.date.outputs.today }}]"
           git push

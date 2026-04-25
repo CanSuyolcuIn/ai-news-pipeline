@@ -17,14 +17,13 @@ from datetime import datetime
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-CATEGORY_ORDER = ["Model", "Yöntem", "Araç", "Platform", "Araştırma"]
+CATEGORY_ORDER = ["Model", "Yöntem", "Araç", "Platform"]
 
 CATEGORY_EMOJI = {
     "Model": "🤖",
     "Yöntem": "🔬",
     "Araç": "🛠️",
     "Platform": "☁️",
-    "Araştırma": "📄",
 }
 
 

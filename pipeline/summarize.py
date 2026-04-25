@@ -37,13 +37,12 @@ def load_output() -> tuple[list[dict], str]:
 
 PROMPT_TEMPLATE = """Asagidaki AI haberlerinin her biri icin:
 1. 2-3 cumle Turkce ozet yaz — teknik, somut, ozgun. "Bu makale..." gibi baslama.
-2. Kategori sec (SADECE birini): Model / Yontem / Arac / Platform / Arastirma
+2. Kategori sec (SADECE birini): Model / Yontem / Arac / Platform
 
    Model      = Yeni bir AI modeli veya versiyonu (GPT, Claude, Gemini, Llama vb.)
-   Yontem     = Yeni egitim yontemi, mimari, algoritma, fine-tuning teknigi
+   Yontem     = Gelistiricilerin kullanabilecegi yeni pratik teknik (fine-tuning, prompting, inference vb.)
    Arac       = Gelistirici araci, SDK, framework, API, MCP server
    Platform   = Bulut servisi, altyapi, deploy platformu
-   Arastirma  = Akademik bulgu, benchmark, degerlendirime, analiz
 
 Haberler:
 {items}

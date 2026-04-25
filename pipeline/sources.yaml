@@ -72,6 +72,14 @@ rss_feeds:
     url: https://simonwillison.net/atom/everything/
     category: haber
 
+  - name: Product Compass
+    url: https://www.productcompass.pm/feed
+    category: haber
+
+  - name: Geeky Gadgets
+    url: https://www.geeky-gadgets.com/feed/
+    category: haber
+
   # Kaldırılanlar:
   # VentureBeat AI - RSS çalışmıyor (0 sonuç)
   # Weaviate Blog - çok dar kapsam (1 sonuç)
