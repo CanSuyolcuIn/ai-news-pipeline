@@ -39,7 +39,7 @@ def group_by_category(items: list[dict]) -> dict[str, list[dict]]:
     for item in items:
         kategori = item.get("kategori", "").strip()
         if kategori not in CATEGORY_ORDER:
-            kategori = "Araştırma"
+            kategori = "Model"  # bilinmeyen kategori Model'e düşsün
         groups[kategori].append(item)
     return groups
 
