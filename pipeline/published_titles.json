@@ -1,0 +1,11 @@
+{
+  "2026-04-25": [
+    "Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints",
+    "Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE",
+    "Google DeepMind Introduces Vision Banana: An Instruction-Tuned Image Generator That Beats SAM 3 on Segmentation and Depth Anything V3 on Metric Depth Estimation",
+    "Meet GitNexus: An Open-Source MCP-Native Knowledge Graph Engine That Gives Claude Code and Cursor Full Codebase Structural Awareness",
+    "GPT-5.5 prompting guide",
+    "llm 0.31",
+    "llm-openai-via-codex 0.1a0"
+  ]
+}

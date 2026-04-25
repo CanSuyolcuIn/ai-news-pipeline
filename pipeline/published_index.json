@@ -95,5 +95,12 @@
   "https://www.marktechpost.com/2026/04/24/deepseek-ai-releases-deepseek-v4-compressed-sparse-attention-and-heavily-compressed-attention-enable-one-million-token-contexts": "2026-04-25",
   "https://techcrunch.com/2026/04/24/nothing-introduces-an-ai-powered-dictation-tool": "2026-04-25",
   "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models": "2026-04-25",
-  "https://simonwillison.net/2026/Apr/24/deepseek-v4": "2026-04-25"
+  "https://simonwillison.net/2026/Apr/24/deepseek-v4": "2026-04-25",
+  "https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints": "2026-04-25",
+  "https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare": "2026-04-25",
+  "https://www.marktechpost.com/2026/04/25/google-deepmind-introduces-vision-banana-an-instruction-tuned-image-generator-that-beats-sam-3-on-segmentation-and-depth-anything-v3-on-metric-depth-estimation": "2026-04-25",
+  "https://www.marktechpost.com/2026/04/24/meet-gitnexus-an-open-source-mcp-native-knowledge-graph-engine-that-gives-claude-code-and-cursor-full-codebase-structural-awareness": "2026-04-25",
+  "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide": "2026-04-25",
+  "https://simonwillison.net/2026/Apr/24/llm": "2026-04-25",
+  "https://simonwillison.net/2026/Apr/23/llm-openai-via-codex": "2026-04-25"
 }
