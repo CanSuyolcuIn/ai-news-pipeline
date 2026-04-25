@@ -254,7 +254,8 @@ B) Yeni pratik teknik/yontem — gelistiricilerin hemen kullanabilecegi:
 
 SKIP — asagidakilerden HERHANGI BIRI varsa SKIP:
 - Arxiv makalesi, akademik paper, benchmark karsilastirmasi, leaderboard
-- Is, yatirim, funding, CEO, strateji, politika haberi
+- Is anlasması, ortaklik, tedarik sozlesmesi, donanim alimi ("signs deal", "partnership", "supply")
+- Yatirim, funding, CEO degisikligi, sirket stratejisi, politika haberi
 - Robotik, insansi robot, otonom arac
 - Liste, siralama, rehber, tutorial, uygulama ornegi
 - Genel yorum, analiz, fikir yazisi
