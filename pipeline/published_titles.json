@@ -1,5 +1,15 @@
 {
   "2026-04-25": [
     "In another wild turn for AI chips, Meta signs deal for millions of Amazon AI CPUs"
+  ],
+  "2026-04-28": [
+    "An open-source spec for orchestration: Symphony",
+    "GPT-5.5 Bio Bug Bounty",
+    "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+    "What's new in pip 26.1 - lockfiles and dependency cooldowns!",
+    "Introducing talkie: a 13B vintage language model from 1930",
+    "Speech translation in Google Meet is now rolling out to mobile devices",
+    "Free Open-Source App Turns Any Audio File Into Text Offline",
+    "Inside Hermes : the OpenSource AI That Automatically Generates Its Own Skills"
   ]
 }
