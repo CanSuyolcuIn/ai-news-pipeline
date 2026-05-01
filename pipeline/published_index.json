@@ -111,5 +111,21 @@
   "https://simonwillison.net/2026/Apr/28/talkie": "2026-04-28",
   "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d": "2026-04-28",
   "https://www.geeky-gadgets.com/convert-audio-to-text-free-pc": "2026-04-28",
-  "https://www.geeky-gadgets.com/hermes-agent-installation-guide": "2026-04-28"
+  "https://www.geeky-gadgets.com/hermes-agent-installation-guide": "2026-04-28",
+  "https://huggingface.co/blog/inference-providers-deepinfra": "2026-05-01",
+  "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence": "2026-05-01",
+  "https://openai.com/openai-on-aws": "2026-05-01",
+  "https://aws.amazon.com/blogs/machine-learning/unleashing-agentic-ai-analytics-on-amazon-sagemaker-with-amazon-athena-and-amazon-quick": "2026-05-01",
+  "https://aws.amazon.com/blogs/machine-learning/run-custom-mcp-proxies-serverless-on-amazon-bedrock-agentcore-runtime": "2026-05-01",
+  "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-nano-omni-model-now-available-on-amazon-sagemaker-jumpstart": "2026-05-01",
+  "https://the-decoder.com/tencents-440-mb-ai-model-translates-33-languages-offline-on-your-phone": "2026-05-01",
+  "https://www.marktechpost.com/2026/04/30/moonshot-ai-open-sources-flashkda-cutlass-kernels-for-kimi-delta-attention-with-variable-length-batching-and-h20-benchmarks": "2026-05-01",
+  "https://www.marktechpost.com/2026/04/30/ibm-releases-two-granite-speech-4-1-2b-models-autoregressive-asr-with-translation-and-non-autoregressive-editing-for-fast-inference": "2026-05-01",
+  "https://www.marktechpost.com/2026/04/29/cursor-introduces-a-typescript-sdk-for-building-programmatic-coding-agents-with-sandboxed-cloud-vms-subagents-hooks-and-token-based-pricing": "2026-05-01",
+  "https://www.marktechpost.com/2026/04/29/qwen-team-releases-flashqla-a-high-performance-linear-attention-kernel-library-that-achieves-up-to-3x-speedup-on-nvidia-hopper-gpus": "2026-05-01",
+  "https://www.marktechpost.com/2026/04/29/meta-fair-releases-neuralset-a-python-package-for-neuro-ai-that-supports-fmri-m-eeg-spikes-and-huggingface-embeddings": "2026-05-01",
+  "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms": "2026-05-01",
+  "https://simonwillison.net/2026/Apr/30/codex-goals": "2026-05-01",
+  "https://www.geeky-gadgets.com/xiaomi-mimo-v2-5-pro-open-source-ai": "2026-05-01",
+  "https://www.geeky-gadgets.com/lightpanda-vs-chrome-ai-browsers": "2026-05-01"
 }

@@ -11,5 +11,23 @@
     "Speech translation in Google Meet is now rolling out to mobile devices",
     "Free Open-Source App Turns Any Audio File Into Text Offline",
     "Inside Hermes : the OpenSource AI That Automatically Generates Its Own Skills"
+  ],
+  "2026-05-01": [
+    "DeepInfra on Hugging Face Inference Providers 🔥",
+    "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+    "OpenAI models, Codex, and Managed Agents come to AWS",
+    "Unleashing Agentic AI Analytics on Amazon SageMaker with Amazon Athena and Amazon Quick",
+    "Run custom MCP proxies serverless on Amazon Bedrock AgentCore Runtime",
+    "NVIDIA Nemotron 3 Nano Omni model now available on Amazon SageMaker JumpStart",
+    "Tencent's 440 MB AI model translates 33 languages offline on your phone",
+    "Moonshot AI Open-Sources FlashKDA: CUTLASS Kernels for Kimi Delta Attention with Variable-Length Batching and H20 Benchmarks",
+    "IBM Releases Two Granite Speech 4.1 2B Models: Autoregressive ASR with Translation and Non-Autoregressive Editing for Fast Inference",
+    "Cursor Introduces a TypeScript SDK for Building Programmatic Coding Agents With Sandboxed Cloud VMs, Subagents, Hooks, and Token-Based Pricing",
+    "Qwen Team Releases FlashQLA: a High-Performance Linear Attention Kernel Library That Achieves Up to 3× Speedup on NVIDIA Hopper GPUs",
+    "Meta FAIR Releases NeuralSet: A Python Package for Neuro-AI That Supports fMRI, M/EEG, Spikes, and HuggingFace Embeddings",
+    "This startup’s new mechanistic interpretability tool lets you debug LLMs",
+    "Codex CLI 0.128.0 adds /goal",
+    "Xiaomi Just Released an Open-Source AI That Outperforms GPT-5.4",
+    "Meet the 64MB Browser Built Entirely for AI Agents and Automation : Lightpanda"
   ]
 }
