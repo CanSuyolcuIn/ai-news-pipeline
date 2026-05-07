@@ -34,5 +34,32 @@
     "xAI's new Custom Voices feature turns a minute of speech into a usable voice clone",
     "Mistral AI Launches Remote Agents in Vibe and Mistral Medium 3.5 with 77.6% SWE-Bench Verified Score",
     "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico"
+  ],
+  "2026-05-07": [
+    "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "Introducing ChatGPT Futures: Class of 2026",
+    "GPT-5.5 Instant: smarter, clearer, and more personalized",
+    "Reduce friction and latency for long-running jobs with Webhooks in Gemini API",
+    "Optimize Supply Chain Decision Systems Using NVIDIA cuOpt Agent Skills",
+    "Automating GPU Kernel Translation with AI Agents: cuTile Python to cuTile.jl",
+    "Streamlining generative AI development with MLflow v3.10 on Amazon SageMaker AI",
+    "Introducing OS Level Actions in Amazon Bedrock AgentCore Browser",
+    "Secure AI agents with Amazon Bedrock AgentCore Identity on Amazon ECS",
+    "Introducing agent quality optimization in AgentCore, now in preview",
+    "Agent-guided workflows to accelerate model customization in Amazon SageMaker AI",
+    "Generate dashboards from natural language prompts in Amazon Quick",
+    "From data lake to AI-ready analytics: Introducing new data source with S3 Tables in Amazon Quick",
+    "Introducing Dataset Q&A: Expanding natural language querying for structured datasets in Amazon Quick",
+    "Capacity-aware inference: Automatic instance fallback for SageMaker AI endpoints",
+    "AWS Transform now automates BI migration to Amazon Quick in days",
+    "Reinforcement fine-tuning with LLM-as-a-judge",
+    "AWS Generative AI Model Agility Solution: A comprehensive guide to migrating LLMs for generative AI production",
+    "Configuring Amazon Bedrock AgentCore Gateway for secure access to private resources",
+    "Zyphra Releases ZAYA1-8B: A Reasoning MoE Trained on AMD Hardware That Punches Far Above Its Weight Class",
+    "Google AI Releases Multi-Token Prediction (MTP) Drafters for Gemma 4: Delivering Up to 3x Faster Inference Without Quality Loss",
+    "TRE Python binding — ReDoS robustness demo",
+    "Why Stanford Researchers Say AI Architecture Isn’t the Real Key to Performance",
+    "iPhone Ultra Leaks: Apple’s September Keynote to Feature First Ever Foldable",
+    "Beyond the Watch: Apple’s New ‘Ultra’ Strategy for iPhone, Mac, and AirPods"
   ]
 }
