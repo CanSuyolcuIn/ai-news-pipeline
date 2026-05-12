@@ -7,7 +7,8 @@ Kullanım:
     python filter.py
 
 Gerekli env:
-    OPENCODE_API_KEY  (opencode.ai API key)
+    OPENROUTER_API_KEY  (openrouter.ai API key)
+    LLM_MODEL           (kullanilacak model, ornek: google/gemini-2.0-flash-001)
 """
 
 import json
@@ -24,9 +25,9 @@ INDEX_PATH = os.path.join(os.path.dirname(__file__), "published_index.json")
 TITLES_PATH = os.path.join(os.path.dirname(__file__), "published_titles.json")
 MAX_HISTORY_RUNS = 10
 
-API_KEY = os.environ.get("OPENCODE_API_KEY", "")
-BASE_URL = "https://opencode.ai/zen/go/v1"
-MODEL = "minimax-m2.5"
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+BASE_URL = "https://openrouter.ai/api/v1"
+MODEL = os.environ.get("LLM_MODEL", "google/gemini-2.0-flash-001")
 
 BATCH_SIZE = 50  # tek seferde kaç başlık gönderilsin
 
@@ -371,7 +372,7 @@ def topic_dedup(client: OpenAI, items: list[dict]) -> list[dict]:
 
 def main():
     if not API_KEY:
-        print("OPENCODE_API_KEY bulunamadı. .env dosyasını kontrol et.")
+        print("OPENROUTER_API_KEY bulunamadı. .env dosyasını kontrol et.")
         return
 
     print("\n=== Filtreleme başladı ===\n")
