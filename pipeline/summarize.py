@@ -21,9 +21,9 @@ load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-API_KEY = os.environ.get("OPENCODE_API_KEY", "")
-BASE_URL = "https://opencode.ai/zen/go/v1"
-MODEL = "minimax-m2.5"
+API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+BASE_URL = "https://openrouter.ai/api/v1"
+MODEL = "minimax/minimax-01"
 
 BATCH_SIZE = 10
 

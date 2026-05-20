@@ -1,0 +1,192 @@
+[
+  {
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Advancing voice intelligence with new models in the API",
+    "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+    "snippet": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences.",
+    "published": "Thu, 07 May 2026 10:00:00 GMT",
+    "fetched_at": "2026-05-12T08:46:03.084139+00:00"
+  },
+  {
+    "source": "OpenAI Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Introducing Trusted Contact in ChatGPT",
+    "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
+    "snippet": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.",
+    "published": "Thu, 07 May 2026 00:00:00 GMT",
+    "fetched_at": "2026-05-12T08:46:03.084143+00:00"
+  },
+  {
+    "source": "NVIDIA Developer Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+    "url": "https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/data-center-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"data-center (2)\" width=\"768\" />The compute capability of large GPU fleet",
+    "published": "2026-05-11T19:44:27Z",
+    "fetched_at": "2026-05-12T08:46:05.568421+00:00"
+  },
+  {
+    "source": "NVIDIA Developer Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+    "url": "https://developer.nvidia.com/blog/improving-bash-generation-in-small-language-models-with-grammar-constrained-decoding/",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/person-desk-three-computers-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"person-desk-three-computers\" width=\"768\" />Bash is on",
+    "published": "2026-05-08T17:13:33Z",
+    "fetched_at": "2026-05-12T08:46:05.568433+00:00"
+  },
+  {
+    "source": "NVIDIA Developer Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Achieving Peak System and Workload Efficiency on NVIDIA GB200 NVL72 with Slurm Block Scheduling",
+    "url": "https://developer.nvidia.com/blog/achieving-peak-system-and-workload-efficiency-on-nvidia-gb200-nvl72-with-slurm-block-scheduling/",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/nvidia-gb200-nvl72-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-gb200-nvl72\" width=\"768\" />NVIDIA GB200 NVL72 introduces a f",
+    "published": "2026-05-07T21:20:14Z",
+    "fetched_at": "2026-05-12T08:46:05.568442+00:00"
+  },
+  {
+    "source": "NVIDIA Developer Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Model Quantization: Post-Training Quantization Using NVIDIA Model Optimizer",
+    "url": "https://developer.nvidia.com/blog/model-quantization-post-training-quantization-using-nvidia-model-optimizer/",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/cube-column-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cube-column\" width=\"768\" />Model quantization is an effective method to re",
+    "published": "2026-05-07T21:18:06Z",
+    "fetched_at": "2026-05-12T08:46:05.568446+00:00"
+  },
+  {
+    "source": "NVIDIA Developer Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Real-Time Performance Monitoring and Faster Debugging with NCCL Inspector and Prometheus",
+    "url": "https://developer.nvidia.com/blog/real-time-performance-monitoring-and-faster-debugging-with-nccl-inspector-and-prometheus/",
+    "snippet": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA-NCCL-In",
+    "published": "2026-05-07T16:02:58Z",
+    "fetched_at": "2026-05-12T08:46:05.568451+00:00"
+  },
+  {
+    "source": "AWS ML Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/",
+    "snippet": "Today, we're excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic's native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationship",
+    "published": "Mon, 11 May 2026 18:43:03 +0000",
+    "fetched_at": "2026-05-12T08:46:06.098101+00:00"
+  },
+  {
+    "source": "AWS ML Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Manufacturing intelligence with Amazon Nova Multimodal Embeddings",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manufacturing-intelligence-with-amazon-nova-multimodal-embeddings/",
+    "snippet": "In this post, we build a multimodal retrieval system for aerospace manufacturing documents using Amazon Nova Multimodal Embeddings on Amazon Bedrock and Amazon S3 Vectors. We evaluate the system on 26 manufacturing queries and compare generation quality between a text-only pipeline and the multimoda",
+    "published": "Mon, 11 May 2026 17:08:24 +0000",
+    "fetched_at": "2026-05-12T08:46:06.098106+00:00"
+  },
+  {
+    "source": "AWS ML Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/",
+    "snippet": "Amazon Quick helps turn your large enterprise data into fast and accurate AI-powered decisions. In this post, you will learn about five new capabilities of Amazon Quick that accelerate how data professionals deliver trusted AI-powered insights at enterprise scale.",
+    "published": "Mon, 11 May 2026 15:56:33 +0000",
+    "fetched_at": "2026-05-12T08:46:06.098115+00:00"
+  },
+  {
+    "source": "AWS ML Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Agents that transact: Introducing Amazon Bedrock AgentCore payments, built with Coinbase and Stripe",
+    "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/",
+    "snippet": "Today, we're announcing a preview of Amazon Bedrock AgentCore Payments, a new set of features in Amazon Bedrock AgentCore that enables AI agents to instantly access and pay for what they use. AgentCore Payments was developed in partnership with Coinbase and Stripe.",
+    "published": "Thu, 07 May 2026 12:55:17 +0000",
+    "fetched_at": "2026-05-12T08:46:06.098131+00:00"
+  },
+  {
+    "source": "AWS ML Blog",
+    "source_type": "rss",
+    "category": "model_sirket",
+    "title": "Intelligence-driven message defense and insights using Amazon Bedrock",
+    "url": "https://aws.amazon.com/blogs/machine-learning/intelligence-driven-message-defense-and-insights-using-amazon-bedrock/",
+    "snippet": "In this post, you will learn how you can use Amazon Nova Foundation Models in Amazon Bedrock to apply generative AI techniques for both business protection and enhancement. You can identify obvious and disguised attempts at direct contact while gaining valuable insights into customer sentiment and s",
+    "published": "Tue, 05 May 2026 15:20:54 +0000",
+    "fetched_at": "2026-05-12T08:46:06.098154+00:00"
+  },
+  {
+    "source": "The Decoder",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "Baidu's Ernie 5.1 cuts 94 percent of pre-training costs while competing with top models",
+    "url": "https://the-decoder.com/baidus-ernie-5-1-cuts-94-percent-of-pre-training-costs-while-competing-with-top-models/",
+    "snippet": "<p><img alt=\"The Chinese search and Internet company Baidu presents the latest version of its chatbot Ernie, which is supposed to deliver significantly better results than before. It also gets support for plugins.\" class=\"attachment-full size-full wp-post-image\" height=\"816\" src=\"https://the-decoder",
+    "published": "Mon, 11 May 2026 17:08:06 +0000",
+    "fetched_at": "2026-05-12T08:46:07.149923+00:00"
+  },
+  {
+    "source": "The Decoder",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "AI turns patches into working exploits in 30 minutes, and the 90-day disclosure window is the casualty",
+    "url": "https://the-decoder.com/ai-turns-patches-into-working-exploits-in-30-minutes-and-the-90-day-disclosure-window-is-the-casualty/",
+    "snippet": "<p><img alt=\"\" class=\"attachment-full size-full wp-post-image\" height=\"768\" src=\"https://the-decoder.com/wp-content/uploads/2026/04/AI_cybersecurity.png\" style=\"height: auto; margin-bottom: 10px;\" width=\"1376\" /></p>\n<p>        Language models find security flaws faster and turn patches into working",
+    "published": "Mon, 11 May 2026 13:53:20 +0000",
+    "fetched_at": "2026-05-12T08:46:07.149936+00:00"
+  },
+  {
+    "source": "MarkTechPost",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "Sakana AI and NVIDIA Introduce TwELL with CUDA Kernels for 20.5% Inference and 21.9% Training Speedup in LLMs",
+    "url": "https://www.marktechpost.com/2026/05/11/sakana-ai-and-nvidia-introduce-twell-with-cuda-kernels-for-20-5-inference-and-21-9-training-speedup-in-llms/",
+    "snippet": "<p>Sakana AI and NVIDIA Researchers demonstrate that simple L1 regularization can induce over 99% sparsity in feedforward layers with negligible downstream performance impact, and translate that sparsity into real GPU throughput gains using new sparse data formats and fused CUDA kernels.</p>\n<p>The ",
+    "published": "Mon, 11 May 2026 08:36:00 +0000",
+    "fetched_at": "2026-05-12T08:46:07.638324+00:00"
+  },
+  {
+    "source": "Simon Willison's Blog",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "Using LLM in the shebang line of a script",
+    "url": "https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything",
+    "snippet": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/llm-shebang\">Using LLM in the shebang line of a script</a></p>\n        <p>Kim_Bruning <a href=\"https://news.ycombinator.com/item?id=48073246#48090590\">on Hacker News</a>:</p>\n<blockquote>\n<p>But seriously, you can put a shebang on ",
+    "published": "2026-05-11T18:48:57+00:00",
+    "fetched_at": "2026-05-12T08:46:08.793375+00:00"
+  },
+  {
+    "source": "Simon Willison's Blog",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "llm-gemini 0.31",
+    "url": "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything",
+    "snippet": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.31\">llm-gemini 0.31</a></p>\n        <blockquote>\n<ul>\n<li><code>gemini-3.1-flash-lite</code> is <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-availab",
+    "published": "2026-05-07T19:57:06+00:00",
+    "fetched_at": "2026-05-12T08:46:08.793398+00:00"
+  },
+  {
+    "source": "Simon Willison's Blog",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+    "url": "https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything",
+    "snippet": "<p><strong><a href=\"https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/\">Behind the Scenes Hardening Firefox with Claude Mythos Preview</a></strong></p>\nFascinating, in-depth details on how Mozilla used their access to the Claude Mythos preview to locate and then fix hundreds of v",
+    "published": "2026-05-07T17:56:25+00:00",
+    "fetched_at": "2026-05-12T08:46:08.793405+00:00"
+  },
+  {
+    "source": "Simon Willison's Blog",
+    "source_type": "rss",
+    "category": "haber",
+    "title": "datasette-referrer-policy 0.1",
+    "url": "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything",
+    "snippet": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-referrer-policy/releases/tag/0.1\">datasette-referrer-policy 0.1</a></p>\n        <p>The OpenStreetMap tiles on the Datasette <a href=\"https://datasette.io/global-power-plants/global-power-plants\">global-power-plants demo</a>",
+    "published": "2026-05-05T23:44:27+00:00",
+    "fetched_at": "2026-05-12T08:46:08.793425+00:00"
+  }
+]

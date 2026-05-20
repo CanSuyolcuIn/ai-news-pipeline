@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Advancing voice intelligence with new models in the API",
+    "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+    "source": "OpenAI Blog",
+    "published": "Thu, 07 May 2026 10:00:00 GMT",
+    "snippet": "Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences.",
+    "ozet": "OpenAI API'sine eklenen yeni ses modelleri, konuşmayı anlama, çevirme ve yazıya dökme yetenekleriyle daha doğal ve akıllı ses deneyimleri sunuyor. Bu modeller, ses tabanlı uygulamaların daha karmaşık görevleri yerine getirmesini sağlıyor.",
+    "kategori": "Model"
+  },
+  {
+    "title": "Introducing Trusted Contact in ChatGPT",
+    "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt",
+    "source": "OpenAI Blog",
+    "published": "Thu, 07 May 2026 00:00:00 GMT",
+    "snippet": "Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.",
+    "ozet": "ChatGPT'ye eklenen 'Güvenilir Kişi' özelliği, kullanıcının kendine zarar verme eğilimi gösterdiği durumlarda önceden belirlenmiş bir kişiyi bilgilendirerek güvenlik önlemi sağlıyor. Bu özellik, kullanıcıların ruh sağlığını korumaya yönelik isteğe bağlı bir araç.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+    "url": "https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/",
+    "source": "NVIDIA Developer Blog",
+    "published": "2026-05-11T19:44:27Z",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/data-center-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"data-center (2)\" width=\"768\" />The compute capability of large GPU fleet",
+    "ozet": "NVIDIA, GPU filolarının gerçek zamanlı görünürlüğünü ve optimizasyonunu sağlayan NVIDIA Fleet Intelligence'ı tanıttı. Bu araç, büyük GPU kümelerinin performansını izleyerek verimliliği artırmayı hedefliyor.",
+    "kategori": "Araç"
+  },
+  {
+    "title": "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+    "url": "https://developer.nvidia.com/blog/improving-bash-generation-in-small-language-models-with-grammar-constrained-decoding/",
+    "source": "NVIDIA Developer Blog",
+    "published": "2026-05-08T17:13:33Z",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/person-desk-three-computers-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"person-desk-three-computers\" width=\"768\" />Bash is on",
+    "ozet": "Bu makale, küçük dil modellerinde Bash komutları oluşturmayı iyileştirmek için dilbilgisi kısıtlı kod çözme yöntemini inceliyor. Bu teknik, üretilen Bash komutlarının doğruluğunu ve işlevselliğini artırmayı amaçlıyor.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Achieving Peak System and Workload Efficiency on NVIDIA GB200 NVL72 with Slurm Block Scheduling",
+    "url": "https://developer.nvidia.com/blog/achieving-peak-system-and-workload-efficiency-on-nvidia-gb200-nvl72-with-slurm-block-scheduling/",
+    "source": "NVIDIA Developer Blog",
+    "published": "2026-05-07T21:20:14Z",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/nvidia-gb200-nvl72-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nvidia-gb200-nvl72\" width=\"768\" />NVIDIA GB200 NVL72 introduces a f",
+    "ozet": "NVIDIA GB200 NVL72'de Slurm Block Scheduling ile en yüksek sistem ve iş yükü verimliliğine ulaşılması hedefleniyor. Bu yöntem, NVIDIA'nın yeni nesil donanımında performansı optimize etmeyi amaçlıyor.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Model Quantization: Post-Training Quantization Using NVIDIA Model Optimizer",
+    "url": "https://developer.nvidia.com/blog/model-quantization-post-training-quantization-using-nvidia-model-optimizer/",
+    "source": "NVIDIA Developer Blog",
+    "published": "2026-05-07T21:18:06Z",
+    "snippet": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/cube-column-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"cube-column\" width=\"768\" />Model quantization is an effective method to re",
+    "ozet": "NVIDIA Model Optimizer kullanılarak model nicelemesi (quantization) yöntemi anlatılıyor. Bu teknik, model boyutunu küçültüp çıkarım hızını artırırken performanstan ödün vermemeyi hedefliyor.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Real-Time Performance Monitoring and Faster Debugging with NCCL Inspector and Prometheus",
+    "url": "https://developer.nvidia.com/blog/real-time-performance-monitoring-and-faster-debugging-with-nccl-inspector-and-prometheus/",
+    "source": "NVIDIA Developer Blog",
+    "published": "2026-05-07T16:02:58Z",
+    "snippet": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NVIDIA-NCCL-Inspector-Real-Time-Performance-Monitoring-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NVIDIA-NCCL-In",
+    "ozet": "NCCL Inspector ve Prometheus kullanılarak gerçek zamanlı performans izleme ve daha hızlı hata ayıklama imkanı sunuluyor. Bu araçlar, NVIDIA Collective Communications Library (NCCL) kullanan uygulamaların performansını analiz etmeyi ve sorunları gidermeyi kolaylaştırıyor.",
+    "kategori": "Araç"
+  },
+  {
+    "title": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/",
+    "source": "AWS ML Blog",
+    "published": "Mon, 11 May 2026 18:43:03 +0000",
+    "snippet": "Today, we're excited to announce the general availability of Claude Platform on AWS. Claude Platform on AWS is a new service that gives customers direct access to Anthropic's native Claude Platform experience through their AWS account, with no separate credentials, contracts, or billing relationship",
+    "ozet": "Anthropic'in Claude Platform'u artık AWS üzerinden erişilebilir durumda. Bu entegrasyon, AWS kullanıcılarının Claude'a doğrudan AWS hesapları üzerinden erişmesini sağlayarak ayrı kimlik bilgileri veya sözleşmelere ihtiyaç duymadan kullanım kolaylığı sunuyor.",
+    "kategori": "Platform"
+  },
+  {
+    "title": "Manufacturing intelligence with Amazon Nova Multimodal Embeddings",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manufacturing-intelligence-with-amazon-nova-multimodal-embeddings/",
+    "source": "AWS ML Blog",
+    "published": "Mon, 11 May 2026 17:08:24 +0000",
+    "snippet": "In this post, we build a multimodal retrieval system for aerospace manufacturing documents using Amazon Nova Multimodal Embeddings on Amazon Bedrock and Amazon S3 Vectors. We evaluate the system on 26 manufacturing queries and compare generation quality between a text-only pipeline and the multimoda",
+    "ozet": "Amazon Nova Multimodal Embeddings kullanılarak havacılık üretim belgeleri için çok modlu bir bilgi erişim sistemi oluşturuluyor. Sistem, metin ve görsel verileri birleştirerek daha doğru ve kapsamlı sonuçlar elde etmeyi amaçlıyor.",
+    "kategori": "Model"
+  },
+  {
+    "title": "Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-accelerating-the-path-from-enterprise-data-to-ai-powered-decisions/",
+    "source": "AWS ML Blog",
+    "published": "Mon, 11 May 2026 15:56:33 +0000",
+    "snippet": "Amazon Quick helps turn your large enterprise data into fast and accurate AI-powered decisions. In this post, you will learn about five new capabilities of Amazon Quick that accelerate how data professionals deliver trusted AI-powered insights at enterprise scale.",
+    "ozet": "Amazon Quick, büyük kurumsal verileri hızlı ve doğru yapay zeka destekli kararlara dönüştürmeye yardımcı oluyor. Yeni özellikler, veri profesyonellerinin güvenilir yapay zeka destekli içgörüleri kurumsal ölçekte sunma süreçlerini hızlandırıyor.",
+    "kategori": "Platform"
+  },
+  {
+    "title": "Agents that transact: Introducing Amazon Bedrock AgentCore payments, built with Coinbase and Stripe",
+    "url": "https://aws.amazon.com/blogs/machine-learning/agents-that-transact-introducing-amazon-bedrock-agentcore-payments-built-with-coinbase-and-stripe/",
+    "source": "AWS ML Blog",
+    "published": "Thu, 07 May 2026 12:55:17 +0000",
+    "snippet": "Today, we're announcing a preview of Amazon Bedrock AgentCore Payments, a new set of features in Amazon Bedrock AgentCore that enables AI agents to instantly access and pay for what they use. AgentCore Payments was developed in partnership with Coinbase and Stripe.",
+    "ozet": "Amazon Bedrock'a eklenen AgentCore Payments, yapay zeka agent'larinin kullandiklari hizmetler icin aninda odeme yapabilmesini sagliyor. Bu yeni ozellik, Coinbase ve Stripe ile isbirligi icinde gelistirildi.",
+    "kategori": "Platform"
+  },
+  {
+    "title": "Intelligence-driven message defense and insights using Amazon Bedrock",
+    "url": "https://aws.amazon.com/blogs/machine-learning/intelligence-driven-message-defense-and-insights-using-amazon-bedrock/",
+    "source": "AWS ML Blog",
+    "published": "Tue, 05 May 2026 15:20:54 +0000",
+    "snippet": "In this post, you will learn how you can use Amazon Nova Foundation Models in Amazon Bedrock to apply generative AI techniques for both business protection and enhancement. You can identify obvious and disguised attempts at direct contact while gaining valuable insights into customer sentiment and s",
+    "ozet": "Amazon Bedrock'taki Amazon Nova Foundation Modelleri, generatif yapay zeka tekniklerini kullanarak hem isletmeleri koruma hem de gelistirme amacli kullanilabilir. Bu sayede, musteri duygularina dair degerli bilgiler elde edilirken, acik ve gizli direkt iletisim girisimleri tespit edilebilir.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Baidu's Ernie 5.1 cuts 94 percent of pre-training costs while competing with top models",
+    "url": "https://the-decoder.com/baidus-ernie-5-1-cuts-94-percent-of-pre-training-costs-while-competing-with-top-models/",
+    "source": "The Decoder",
+    "published": "Mon, 11 May 2026 17:08:06 +0000",
+    "snippet": "<p><img alt=\"The Chinese search and Internet company Baidu presents the latest version of its chatbot Ernie, which is supposed to deliver significantly better results than before. It also gets support for plugins.\" class=\"attachment-full size-full wp-post-image\" height=\"816\" src=\"https://the-decoder",
+    "ozet": "Baidu'nun Ernie 5.1 modeli, en iyi modellerle rekabet ederken egitim maliyetlerini %94 oraninda azaltiyor. Bu yeni versiyon, onceki versiyonlara gore daha iyi sonuclar sunuyor ve eklenti destegi de getiriyor.",
+    "kategori": "Model"
+  },
+  {
+    "title": "AI turns patches into working exploits in 30 minutes, and the 90-day disclosure window is the casualty",
+    "url": "https://the-decoder.com/ai-turns-patches-into-working-exploits-in-30-minutes-and-the-90-day-disclosure-window-is-the-casualty/",
+    "source": "The Decoder",
+    "published": "Mon, 11 May 2026 13:53:20 +0000",
+    "snippet": "<p><img alt=\"\" class=\"attachment-full size-full wp-post-image\" height=\"768\" src=\"https://the-decoder.com/wp-content/uploads/2026/04/AI_cybersecurity.png\" style=\"height: auto; margin-bottom: 10px;\" width=\"1376\" /></p>\n<p>        Language models find security flaws faster and turn patches into working",
+    "ozet": "Yapay zeka, guvenlik aciklarini daha hizli bulup yamalari 30 dakika icinde calisan exploit'lere donusturebiliyor. Bu durum, 90 gunluk aciklama suresini tehlikeye atiyor.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Sakana AI and NVIDIA Introduce TwELL with CUDA Kernels for 20.5% Inference and 21.9% Training Speedup in LLMs",
+    "url": "https://www.marktechpost.com/2026/05/11/sakana-ai-and-nvidia-introduce-twell-with-cuda-kernels-for-20-5-inference-and-21-9-training-speedup-in-llms/",
+    "source": "MarkTechPost",
+    "published": "Mon, 11 May 2026 08:36:00 +0000",
+    "snippet": "<p>Sakana AI and NVIDIA Researchers demonstrate that simple L1 regularization can induce over 99% sparsity in feedforward layers with negligible downstream performance impact, and translate that sparsity into real GPU throughput gains using new sparse data formats and fused CUDA kernels.</p>\n<p>The ",
+    "ozet": "Sakana AI ve NVIDIA, LLM'lerde %20.5 cikarsama ve %21.9 egitim hizlandirmasi icin CUDA Kernelleri ile TwELL'i tanitti. L1 duzenliliginin, GPU verimini artiran seyrek veri formatlari ve kaynastirilmis CUDA cekirdekleri kullanilarak %99'un uzerinde seyreklige neden olabilecegi gosterildi.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "Using LLM in the shebang line of a script",
+    "url": "https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything",
+    "source": "Simon Willison's Blog",
+    "published": "2026-05-11T18:48:57+00:00",
+    "snippet": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/llm-shebang\">Using LLM in the shebang line of a script</a></p>\n        <p>Kim_Bruning <a href=\"https://news.ycombinator.com/item?id=48073246#48090590\">on Hacker News</a>:</p>\n<blockquote>\n<p>But seriously, you can put a shebang on ",
+    "ozet": "Bir betigin shebang satirinda LLM kullanilabiliyor.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "llm-gemini 0.31",
+    "url": "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything",
+    "source": "Simon Willison's Blog",
+    "published": "2026-05-07T19:57:06+00:00",
+    "snippet": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.31\">llm-gemini 0.31</a></p>\n        <blockquote>\n<ul>\n<li><code>gemini-3.1-flash-lite</code> is <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-availab",
+    "ozet": "llm-gemini 0.31 surumu, gemini-3.1-flash-lite modelini genel kullanima sunuyor.",
+    "kategori": "Araç"
+  },
+  {
+    "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+    "url": "https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything",
+    "source": "Simon Willison's Blog",
+    "published": "2026-05-07T17:56:25+00:00",
+    "snippet": "<p><strong><a href=\"https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/\">Behind the Scenes Hardening Firefox with Claude Mythos Preview</a></strong></p>\nFascinating, in-depth details on how Mozilla used their access to the Claude Mythos preview to locate and then fix hundreds of v",
+    "ozet": "Mozilla, Claude Mythos onizlemesine erisimini kullanarak Firefox'u guclendirmek icin yuzlerce guvenlik acigini tespit edip duzeltti.",
+    "kategori": "Yöntem"
+  },
+  {
+    "title": "datasette-referrer-policy 0.1",
+    "url": "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything",
+    "source": "Simon Willison's Blog",
+    "published": "2026-05-05T23:44:27+00:00",
+    "snippet": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-referrer-policy/releases/tag/0.1\">datasette-referrer-policy 0.1</a></p>\n        <p>The OpenStreetMap tiles on the Datasette <a href=\"https://datasette.io/global-power-plants/global-power-plants\">global-power-plants demo</a>",
+    "ozet": "datasette-referrer-policy 0.1 surumu yayinlandi. Bu surum, Datasette'in global-power-plants demosundaki OpenStreetMap kutucuklarina yonelik yonlendirme ilkesini iyilestiriyor.",
+    "kategori": "Araç"
+  }
+]
