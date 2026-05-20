@@ -82,5 +82,25 @@
     "llm-gemini 0.31",
     "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
     "datasette-referrer-policy 0.1"
+  ],
+  "2026-05-20": [
+    "Introducing the Ettin Reranker Family",
+    "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
+    "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+    "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+    "Unlocking asynchronicity in continuous batching",
+    "mimalloc: A new, high-performance, scalable memory allocator for the modern era",
+    "GridSFM: A new, small foundation model for the electric grid",
+    "Scalable voice agent design with Amazon Nova Sonic: multi-agent, tools, and session segmentation",
+    "Extending conversational memory in Kiro CLI using Amazon Bedrock AgentCore Memory",
+    "Accelerate ML feature pipelines with new capabilities in Amazon SageMaker Feature Store",
+    "Implementing programmatic tool calling on Amazon Bedrock",
+    "Build custom code-based evaluators in Amazon Bedrock AgentCore",
+    "Improve bot accuracy with Amazon Lex Assisted NLU",
+    "Real-time voice agents with Stream Vision Agents and Amazon Nova 2 Sonic",
+    "Control where your AI agents can browse with Chrome enterprise policies on Amazon Bedrock AgentCore",
+    "Build real-time voice streaming applications with Amazon Nova Sonic and WebRTC",
+    "Fine-tune LLM with Databricks Unity Catalog and Amazon SageMaker AI",
+    "Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents"
   ]
 }
