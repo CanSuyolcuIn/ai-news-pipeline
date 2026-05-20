@@ -61,5 +61,26 @@
     "Why Stanford Researchers Say AI Architecture Isn’t the Real Key to Performance",
     "iPhone Ultra Leaks: Apple’s September Keynote to Feature First Ever Foldable",
     "Beyond the Watch: Apple’s New ‘Ultra’ Strategy for iPhone, Mac, and AirPods"
+  ],
+  "2026-05-12": [
+    "Advancing voice intelligence with new models in the API",
+    "Introducing Trusted Contact in ChatGPT",
+    "Introducing NVIDIA Fleet Intelligence for Real-Time GPU Fleet Visibility and Optimization",
+    "Improving Bash Generation in Small Language Models with Grammar-Constrained Decoding",
+    "Achieving Peak System and Workload Efficiency on NVIDIA GB200 NVL72 with Slurm Block Scheduling",
+    "Model Quantization: Post-Training Quantization Using NVIDIA Model Optimizer",
+    "Real-Time Performance Monitoring and Faster Debugging with NCCL Inspector and Prometheus",
+    "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account",
+    "Manufacturing intelligence with Amazon Nova Multimodal Embeddings",
+    "Amazon Quick: Accelerating the path from enterprise data to AI-powered decisions",
+    "Agents that transact: Introducing Amazon Bedrock AgentCore payments, built with Coinbase and Stripe",
+    "Intelligence-driven message defense and insights using Amazon Bedrock",
+    "Baidu's Ernie 5.1 cuts 94 percent of pre-training costs while competing with top models",
+    "AI turns patches into working exploits in 30 minutes, and the 90-day disclosure window is the casualty",
+    "Sakana AI and NVIDIA Introduce TwELL with CUDA Kernels for 20.5% Inference and 21.9% Training Speedup in LLMs",
+    "Using LLM in the shebang line of a script",
+    "llm-gemini 0.31",
+    "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+    "datasette-referrer-policy 0.1"
   ]
 }

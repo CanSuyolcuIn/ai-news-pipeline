@@ -7,7 +7,7 @@ Kullanim:
     python summarize.py
 
 Gerekli env:
-    OPENCODE_API_KEY  (opencode.ai API key)
+    OPENROUTER_API_KEY  (openrouter.ai API key)
 """
 
 import json
@@ -23,7 +23,7 @@ DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 BASE_URL = "https://openrouter.ai/api/v1"
-MODEL = "minimax/minimax-01"
+MODEL = os.environ.get("LLM_MODEL", "minimax/minimax-01")
 
 BATCH_SIZE = 10
 
@@ -119,7 +119,7 @@ def summarize_batch(
 
 def main():
     if not API_KEY:
-        print("OPENCODE_API_KEY bulunamadi. .env dosyasini kontrol et.")
+        print("OPENROUTER_API_KEY bulunamadi. .env dosyasini kontrol et.")
         return
 
     print("\n=== Ozetleme basladi ===\n")

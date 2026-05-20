@@ -37,6 +37,7 @@ jobs:
         run: |
           echo "EXA_API_KEY=${{ secrets.EXA_API_KEY }}" > pipeline/.env
           echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> pipeline/.env
+          echo "LLM_MODEL=${{ secrets.LLM_MODEL }}" >> pipeline/.env
           echo "GMAIL_USER=${{ secrets.GMAIL_USER }}" >> pipeline/.env
           echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> pipeline/.env
 
